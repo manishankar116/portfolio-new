@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import ProfilePortfolio2 from '../asserts/ProfilePortfolio.png';
 import { use } from 'react';
 
-const tech = ['Java', 'Spring Boot', 'React', 'AWS', 'Docker', 'PostgreSQL']
+const tech = ['Java', 'Spring Boot', 'PostgreSQL','Git', 'CI/CD', 'Docker', 'React']
 
 export default function Landing() {
   return (
@@ -25,10 +25,10 @@ export default function Landing() {
           <div className="mt-9 flex items-center gap-3">
             <a className="social-link" href="https://www.linkedin.com/" aria-label="LinkedIn"><BriefcaseBusiness size={17} /></a>
             <a className="social-link" href="https://github.com/" aria-label="GitHub"><Code2 size={17} /></a>
-            <a className="social-link" href="mailto:mani.shankar@example.com" aria-label="Email"><Mail size={17} /></a>
+            <a className="social-link" href="mailto:manisankar0911@gmail.com" aria-label="Email"><Mail size={17} /></a>
             <span className="ml-2 h-6 w-px bg-ink/15" />
             <span className="text-xs text-slate-500">Chennai, India · Open to relocation</span>
-          </div>
+          </div> 
         </motion.div>
 
         <motion.div initial={{ opacity: 0, scale: .96, y: 18 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: .8, delay: .12 }} className="relative mx-auto w-full max-w-[490px]">
