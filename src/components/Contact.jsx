@@ -30,7 +30,7 @@ export default function Contact() {
                   The best way to reach me is by email or LinkedIn.
                 </p>
                 <a
-                  href="mailto:mani.shankar@example.com"
+                  href="mailto:manishankar0911@gmail.com"
                   className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-forest transition hover:bg-[#e9eee3]"
                 >
                   Start a conversation <ArrowUpRight size={16} />

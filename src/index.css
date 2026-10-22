@@ -16,7 +16,7 @@ body { margin: 0; min-width: 320px; }
 .button-primary:hover { background: #142a25; transform: translateY(-2px); }
 .button-secondary { border: 1px solid rgba(20,42,37,.16); background: rgba(255,255,255,.72); color: #173b31; }
 .button-secondary:hover { border-color: rgba(23,59,49,.5); transform: translateY(-2px); }
-.social-link { display: grid; height: 37px; width: 37px; place-items: center; border: 1px solid rgba(20,42,37,.12); border-radius: 50%; color: #173b31; transition: all .2s ease; }
+.social-link { position: relative; z-index: 30; display: grid; height: 37px; width: 37px; place-items: center; border: 1px solid rgba(20,42,37,.12); border-radius: 50%; color: #173b31; touch-action: manipulation; transition: all .2s ease; }
 .social-link:hover { background: #173b31; color: white; transform: translateY(-2px); }
 .contact-card { display: flex; min-width: 0; align-items: center; gap: 12px; border: 1px solid rgba(255,255,255,.12); border-radius: 16px; background: rgba(255,255,255,.07); padding: 15px; color: #f8f7f1; transition: background .2s ease; }
 .contact-card:hover { background: rgba(255,255,255,.13); }

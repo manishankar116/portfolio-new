@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Menu, X, ArrowUpRight } from 'lucide-react'
 import Sign from '../asserts/Sign.png';
+import resumeUrl from '../asserts/Mani_Sankar_Vasa_CV.pdf'
 
 const links = [['About', '#about'], ['Experience', '#experience'], ['Skills', '#skills'], ['Projects', '#projects'], ['Contact', '#contact']]
 
@@ -17,14 +18,14 @@ export default function Navbar() {
         <div className="hidden items-center gap-7 md:flex">
           {links.map(([label, href]) => <a key={label} className="nav-link" href={href}>{label}</a>)}
         </div>
-        <a href="/Mani-Shankar-Resume.pdf" className="hidden items-center gap-2 rounded-full bg-forest px-5 py-3 text-xs font-bold text-white transition hover:bg-ink sm:inline-flex">
+        <a href={resumeUrl} download="Mani_Sankar_Vasa_CV.pdf" className="hidden items-center gap-2 rounded-full bg-forest px-5 py-3 text-xs font-bold text-white transition hover:bg-ink sm:inline-flex">
           Download resume <ArrowUpRight size={14} />
         </a>
         <button className="rounded-xl border border-ink/10 p-2 text-ink md:hidden" onClick={() => setOpen(!open)} aria-label="Toggle navigation">
           {open ? <X size={21} /> : <Menu size={21} />}
         </button>
       </nav>
-      {open && <div className="container-shell grid gap-1 pb-4 md:hidden">{links.map(([label, href]) => <a key={label} onClick={() => setOpen(false)} className="rounded-lg px-3 py-3 text-sm font-medium hover:bg-white" href={href}>{label}</a>)}<a className="mt-2 rounded-lg bg-forest px-3 py-3 text-sm font-semibold text-white" href="/Mani-Shankar-Resume.pdf">Download resume</a></div>}
+      {open && <div className="container-shell grid gap-1 pb-4 md:hidden">{links.map(([label, href]) => <a key={label} onClick={() => setOpen(false)} className="rounded-lg px-3 py-3 text-sm font-medium hover:bg-white" href={href}>{label}</a>)}<a className="mt-2 rounded-lg bg-forest px-3 py-3 text-sm font-semibold text-white" href={resumeUrl} download="Mani_Sankar_Vasa_CV.pdf">Download resume</a></div>}
     </header>
   )
 }

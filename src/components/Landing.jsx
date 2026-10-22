@@ -1,7 +1,6 @@
 import { ArrowDownRight, ArrowUpRight, BriefcaseBusiness, Code2, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 import ProfilePortfolio2 from '../asserts/ProfilePortfolio.png';
-import { use } from 'react';
 
 const tech = ['Java', 'Spring Boot', 'PostgreSQL','Git', 'CI/CD', 'Docker', 'React']
 
@@ -23,15 +22,15 @@ export default function Landing() {
             <a href="#contact" className="button-secondary">Contact me <ArrowDownRight size={16} /></a>
           </div>
           <div className="mt-9 flex items-center gap-3">
-            <a className="social-link" href="https://www.linkedin.com/" aria-label="LinkedIn"><BriefcaseBusiness size={17} /></a>
-            <a className="social-link" href="https://github.com/" aria-label="GitHub"><Code2 size={17} /></a>
+            <a className="social-link" href="https://www.linkedin.com/in/mani-shankar-vasa-a71198186/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><BriefcaseBusiness size={17} /></a>
+            <a className="social-link" href="https://github.com/manishankar116" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Code2 size={17} /></a>
             <a className="social-link" href="mailto:manisankar0911@gmail.com" aria-label="Email"><Mail size={17} /></a>
             <span className="ml-2 h-6 w-px bg-ink/15" />
             <span className="text-xs text-slate-500">Chennai, India · Open to relocation</span>
           </div> 
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, scale: .96, y: 18 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: .8, delay: .12 }} className="relative mx-auto w-full max-w-[490px]">
+        <motion.div initial={{ opacity: 0, scale: .96, y: 18 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: .8, delay: .12 }} className="relative z-0 mx-auto w-full max-w-[490px]">
           <div className="absolute inset-x-8 bottom-0 top-8 rounded-[48%_48%_24px_24px] bg-[#e8e8dc]" />
           <div className="absolute -left-3 top-20 h-24 w-24 rounded-full border border-orange/30" />
           <div className="absolute -right-3 top-28 h-12 w-12 rounded-2xl bg-orange/15" />

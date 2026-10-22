@@ -2,6 +2,7 @@ import { ArrowUpRight, BriefcaseBusiness } from 'lucide-react'
 import Reveal from './Reveal'
 import SectionHeading from './SectionHeading'
 import { experience } from '../data/portfolio'
+import resumeUrl from '../asserts/Mani_Sankar_Vasa_CV.pdf'
 
 export default function Experience() {
   return (
@@ -14,7 +15,9 @@ export default function Experience() {
               title="Experience that ships."
             />
             <a
-              href="/Mani-Shankar-Resume.pdf"
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="button-secondary mb-10"
             >
               Full resume <ArrowUpRight size={15} />
